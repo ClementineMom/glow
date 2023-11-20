@@ -1,3 +1,11 @@
+:root{
+  --dark: rgb(1, 1, 0);
+  --light: rgb(255, 255, 255);
+  --glow1: rgb(209, 0, 174);
+  --glow2: rgb(80, 150, 237);
+  --darkdark: rgb(1, 15, 28);
+
+}
 *{
  margin:0px;
  padding:0px;
@@ -9,7 +17,7 @@ body {
  margin-right: 75px;
  margin-top: 20px;
  margin-bottom: 20px;
- background-color: rgb(1, 1, 0);
+ background-color: var(--dark);
 } 
 
 .navbar{
@@ -20,20 +28,20 @@ body {
 
 a {
  text-decoration: none;
- color: rgb(255, 255, 255);
+ color: var(--light);
  text-shadow: 0 0 3px rgb(209, 0, 174), 0 0 6px rgb(209, 0, 174), 0 0 9px rgb(209, 0, 174), 0 0 12px rgb(209, 0, 174);
  text-decoration: none;
  font-size: 25px;
  font-weight: 500;
  -webkit-text-stroke-width: 1px;
- -webkit-text-stroke-color: rgb(5, 43, 114)
+ -webkit-text-stroke-color: var(--darkdark)
 }
 
 header {
   position:sticky;
   top: 20px;
-  background-color:rgb(80, 150, 237);
-  border: 5px solid rgb(255,254,254);
+  background-color:var(--glow2);
+  border: 5px solid var(--light);
   border-radius: 10px;
   box-shadow: 0 0 3px rgb(80, 150, 237), 0 0 6px rgb(80, 150, 237), 0 0 12px rgb(80, 150, 237), 0 0 24px rgb(80, 150, 237), 0 0 48px rgb(80, 150, 237)
 }
@@ -48,11 +56,11 @@ h1{
   text-align: center;
   font-size: 60px;
   font-weight: 700;
-  color:rgb(255, 255, 255);
+  color:var(--light);
   margin-top: 50px;
   margin-bottom: 125px;
   -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: rgb(1, 11, 28);
+  -webkit-text-stroke-color: var(--darkdark);
   text-shadow: 0 0 3px rgb(209, 0, 174), 0 0 6px rgb(209, 0, 174), 0 0 9px rgb(209, 0, 174), 0 0 12px rgb(209, 0, 174),0 0 24px rgb(209, 0, 174),0 0 48px rgb(209, 0, 174),0 0 96px rgb(209, 0, 174)
 }
 
@@ -65,7 +73,7 @@ figure {
 
 img{
   width: 500px;
-  border: 5px solid rgb(255,254,254);
+  border: 5px solid var(--light);
   border-radius: 10px;
   box-shadow: 0 0 10px rgb(255,254,254), 0 0 25px rgba(255, 254, 254, 0.867), 0 0 50px rgba(255, 254, 254, 0.641), 0 0 100px rgba(255, 254, 254, 0.534),  0 0 150px rgba(209, 0, 174, 0.55), 0 0 200px rgba(209, 0, 174, 0.412), 0 0 300px rgba(209, 0, 174, 0.287), 0 0 24px rgba(209, 0, 174, 0.311);
 }
@@ -73,7 +81,7 @@ img{
 .text-center{
   display:block;
   text-align:center;
-  color:rgb(3, 3, 3);
+  color:var(--darkdark);
   font-weight: 600;
   font-size: 25px;
   margin-bottom: 75px;
@@ -84,19 +92,19 @@ img{
   padding-bottom: 20px;
   padding-top: 40px;
   font-size: 40px; 
-  color:rgb(255,254,254);
+  color:var(--light);
   -webkit-text-stroke-width: 1.5px;
-  -webkit-text-stroke-color: rgb(209, 0, 174);
+  -webkit-text-stroke-color: var(--glow1);
 }
 
 form{
-  background-color: rgb(1, 15, 28);
+  background-color: var(--darkdark);
   text-align: right;
-  border: 5px solid rgb(209, 0, 174);
+  border: 5px solid var(--glow1);
   border-radius: 10px;
   box-shadow:0 0 10px rgb(209, 0, 174), 0 0 25px rgb(209, 0, 174), 0 0 50px rgba(209, 0, 174, 0.849), 0 0 100px rgba(209, 0, 174, 0.666),  0 0 150px rgba(209, 0, 174, 0.55), 0 0 200px rgba(209, 0, 174, 0.412), 0 0 300px rgba(209, 0, 174, 0.287), 0 0 24px rgba(209, 0, 174, 0.311);
   font-weight: 600;
-  color: rgb(80, 150, 237);
+  color: var(--glow2);
   padding:30px;
   padding-bottom: 70px;
   font-size: 25px;
@@ -109,13 +117,13 @@ form{
 input#name{
   padding: 5px;
   width: 250px;
-  border-color: rgb(80, 150, 237);
+  border-color:var(--glow2);
   border-radius: 10px;
 }
 
 input#email{
   padding: 5px;
-  border-color: rgb(80, 150, 237);
+  border-color: var(--glow2);
   border-radius: 10px;
   width: 250px;
 }
@@ -126,10 +134,10 @@ input#email{
 }
 
 button{
- color: rgb(1, 15, 28);
+ color: var(--darkdark);
  -webkit-text-stroke-width: 1.5px;
- -webkit-text-stroke-color: rgb(1, 15, 28);
- border: 3px solid rgb(209, 0, 174);
+ -webkit-text-stroke-color: var(--darkdark);
+ border: 3px solid var(--glow1);
  border-radius: 10px;
  padding-left: 20px;
  padding-right: 20px;
@@ -145,21 +153,21 @@ button{
 }
 
 button:hover{
-  background:  rgb(1, 15, 28);
-  color:rgb(255,254,254)
+  background:  var(--darkdark);
+  color:var(--light)
 }
 button:active {
-  background-color:rgb(80, 150, 237);
+  background-color:var(--glow2);
   background-size: 100%;
   transition: background .2s;
-  border: 4px solid rgb(80, 150, 237);
+  border: 4px solid var(--glow2);
   font-size: 26px;
-  color:rgb(255,254,254)
+  color:var(--light)
 }
 
 button:after{
-  background:  rgb(1, 15, 28);
-  color:rgb(255,254,254) 
+  background:  var(--darkdark);
+  color:var(--light)
 }
 
 div.text-button{
@@ -173,18 +181,18 @@ footer{
   padding-top: 25px;
   padding-bottom: 25px;
   font-weight:500;
-  background-color: rgb(80, 150, 237);
-  border: solid 5px rgb(255,254,254);
+  background-color: var(--glow2);
+  border: solid 5px var(--light);
   border-radius: 10px;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgb(5, 43, 114);
+  -webkit-text-stroke-color: var(--darkdark);
   box-shadow: 0 0 3px rgb(80, 150, 237), 0 0 6px rgb(80, 150, 237), 0 0 12px rgb(80, 150, 237), 0 0 24px rgb(80, 150, 237), 0 0 48px rgb(80, 150, 237)
 }
 
 footer.text-center{
   text-align: right;
   padding-right: 20px;
-  color:rgb(255,254,254);
+  color:var(--light);
   text-shadow: 0 0 3px rgb(209, 0, 174), 0 0 6px rgb(209, 0, 174), 0 0 9px rgb(209, 0, 174), 0 0 12px rgb(209, 0, 174);
   font-size: 20px;
 }
